@@ -23,12 +23,11 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  /* position: relative; */
+  position: relative;
 }
  .home_win_pics { 
   width: 100%;  
   height: 40%;
-  background: #b299d25f;
 } 
 
 /* ///////////////////    header code       ///////////////////////////////////// */
@@ -88,15 +87,15 @@ body {
 hr{
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 1.5rem;
+  margin-top: .5rem;
   background-color: rgba(0, 0, 0, 0.357);
 }
 
 
 /* -------------------------------------------------------------------------------product imgs------------------------------------------------------------------------------------------------------////////////////////////////////////////////// */
 
-.products{
-  height: 50%;
+.products{  
+  height: 48%;
   overflow-y: scroll;
   margin: 0 .3rem;
   margin-top: .3rem;
