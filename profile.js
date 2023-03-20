@@ -7,6 +7,7 @@ const withd = document.querySelector('.with');
 const check = document.querySelector(".checkbox");
 const outerdep = document.querySelector('.deposite');
 const close = document.querySelector('.withdrawals_in > ion-icon');
+const close2 = document.querySelector('.Pc_deposite > ion-icon');
 const withdrawals = document.querySelector('.withdrawals');
 const deposite_add_btn = document.querySelector('#add');
 //---------------------------------------------------- close button for popup --------------------------------------------------------------------- 
@@ -225,4 +226,27 @@ setting_arrow.addEventListener('click', () => {
 // ----------------- writting js for deposite add btn -----------------------------------------------------------------------------------------------------
 deposite_add_btn.addEventListener('click' , ()=>{
   alert("added")
+});
+
+
+// -------------------------------------------------- writting the js for the pc withdrawal and deposite ----------------------------------------------------------------------------------------------------------------
+
+const pc_withdrawal = document.querySelector("#pc_W");
+pc_withdrawal.addEventListener('click' , ()=>{
+    withdrawal.style.transform = "translateX(0)";
+    withdrawals.style.transform = "translateX(0)";
+    Pc_depo.style.transform = "translateY(140vh)";
+     
+});
+const Pc_depo = document.querySelector('.Pc_deposite');
+const pc_dep = document.querySelector("#pc_D");
+pc_dep.addEventListener('click' , ()=>{
+    Pc_depo.style.transform = "translate(0)";
+    withdrawals.style.transform = "translateX(200%)"    
+    withdrawal.style.transform = "translateX(200%)";
+
+});
+close2.addEventListener('click', ()=>{
+    Pc_depo.style.transform = "translateY(140vh)";
+        
 });

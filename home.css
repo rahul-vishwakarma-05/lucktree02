@@ -66,6 +66,11 @@ body {
 .swiper {
   width: 100%;
   height: 70%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  
 }
 
 .swiper-slide {
@@ -87,15 +92,15 @@ body {
 hr{
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
   background-color: rgba(0, 0, 0, 0.357);
 }
 
 
 /* -------------------------------------------------------------------------------product imgs------------------------------------------------------------------------------------------------------////////////////////////////////////////////// */
 
-.products{  
-  height: 48%;
+.products{
+  height: 50%;
   overflow-y: scroll;
   margin: 0 .3rem;
   margin-top: .3rem;
@@ -104,6 +109,7 @@ hr{
   padding-bottom: 10rem;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
+
 }
 .products > div{
    margin-top: .7rem;   
@@ -254,6 +260,163 @@ display: none; /* for Chrome, Safari, and Opera */
 
 }
 
+/* ------------ footer for pc------------ */
+
+.fa-2x {
+    font-size: 2em;
+}
+
+ ion-icon{
+  width: 60px;
+  height: 36px;
+  
+ }
+
+    .fa  {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:23px;
+    }
+    
+    
+    .main-menu,nav.main-menu{
+    width:200px;
+    overflow:visible;
+    }
+    
+    .main-menu {
+    background:#8d66be;
+    position:absolute;
+    top:10%;
+    bottom:0;
+    height: calc(100% - 10.5%);
+    left:0;
+    width:60px;
+    overflow:hidden;
+     z-index: 5;
+    }
+    
+    .main-menu>ul {
+    margin: 5rem 0;
+    }
+    
+    .main-menu li {
+    position:relative;
+    border-bottom: 2px solid rgb(221, 216, 216);
+    display:block;
+    padding-top: .85rem;
+    padding-bottom: .8rem;
+    }
+    
+    .main-menu li>a {
+    position:relative;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    color: black;
+     font-family: arial;
+    font-size: 14px;
+    text-decoration:none;
+    text-align: start;
+    text-transform: uppercase;
+    /* -webkit-transform:translateZ(0) scale(1,1); */
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+      
+    }
+    
+    .main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:60px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:18px;
+    }
+    
+    .main-menu .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .main-menu>ul.logout {
+    position:absolute;
+    left:0;
+    bottom:0;
+    }
+    
+    .no-touch .scrollable.hover {
+    overflow-y:hidden;
+    }
+    
+    .no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+    }
+    
+    a:hover,a:focus {
+    text-decoration:none;
+    }
+    
+    nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    }
+    
+    nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+    }
+
+    
+    .area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+    }
+
+    @font-face {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+     }
+     .main-menu li .nav-text{
+        padding : 0 0.25rem;
+     }
+    .main-menu li:hover .nav-text{
+        background-color: white;
+        color : black;
+        border-bottom-left-radius: 10px;
+    }
+    .main-menu li i{
+        background :  #8d66be;
+    }
+    .main-menu::after{
+        content : "";
+        height: 10rem;
+        width : 10rem;
+        background-color: white;
+        position: absolute;
+        top : -6rem;
+        left : 2rem;
+        border-radius: 100%;;
+    }
+        
+
 /* ///////////////////////////////////       items popup         ///////////////////////////////// */
 
 
@@ -278,4 +441,52 @@ display: none; /* for Chrome, Safari, and Opera */
 .itemdis > h4 > ion-icon{
   font-size: 3rem;
   margin: 1rem;
+}
+
+
+/* -----------------pc media query ----------------0 */
+@media screen and ( min-width : 490px){
+  #footer{
+      display: none;
+  }
+  .header > span{
+      margin-top: -100rem;
+  }
+  .products{
+      padding: 1.5rem;
+      margin-left: 200px;
+      width: calc(100%-200px);
+  }
+  .swiper{
+      width: calc(100% - 300px);
+      margin-left : 250px !important;
+      z-index: 21;
+      margin-top : 0.5rem;
+  }
+  #header{
+      z-index: 6;
+      border : none
+  }
+  .o{
+    border-radius: 3rem;
+    width: 90%;
+    height: 120%;
+    left: -25%;
+    top: -150%;
+  }
+  .t{
+    display: none;
+  }
+  .th{
+    display: none;    
+  }
+}
+
+
+/* -------------- phone media query ------------ */
+
+@media screen and ( max-width : 490px){
+    .main-menu{
+        display: none;
+    }
 }

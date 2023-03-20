@@ -46,20 +46,45 @@
             <h3>withdrawal amount</h3>
             <h4>200,00</h4>
           </div>
-  
+
           <div>
             <h3>total bets played</h3>
             <h4>10</h4>
           </div>
-  
+
           <div>
             <h3>members invited</h3>
             <h4>100</h4>
           </div>
         </div>
-        
+
+
       </div>
 
+      <div class="pc_withdrawal">
+        <span id="pc_W">WITHDRAWAL</span>
+        <span id="pc_D">DEPOSITE</span>
+      </div>
+
+      <section class="Pc_deposite">
+        <ion-icon name="close"></ion-icon>
+        <div class="Pc_innear_dep">
+          <div>
+            <h4>Available balance</h4>
+            <h5>
+              <pre> ₹ </pre>
+              <p>1000</p>
+            </h5>
+          </div>
+          <div class="Pc_dep_amount">
+            <h4>Add amount</h4>
+            <input type="number" placeholder="add amount">
+          </div>
+          <span>
+            <button id="Pc_add">Add</button>
+          </span>
+        </div>
+      </section>
 
       <!-- -----------------------------------------------creating the footer------------------------------------------ -->
 
@@ -68,14 +93,14 @@
         <div>
           <ion-icon name="home-outline"></ion-icon>
           <a href="home.html">
-            <h6>HOME</h6>
+            <h5>HOME</h5>
           </a>
         </div>
 
         <div>
-          <ion-icon name="refresh-sharp" ></ion-icon>
-          <a href="history.html">
-            <h6>history</h6>
+          <ion-icon name="refresh-sharp"></ion-icon>
+          <a href="">
+            <h5>history</h5>
           </a>
         </div>
 
@@ -89,14 +114,14 @@
         <div>
           <ion-icon name="newspaper-outline"></ion-icon>
           <a href="">
-            <h6>RESULT</h6>
+            <h5>RESULT</h5>
           </a>
         </div>
 
         <div>
           <ion-icon name="person-outline"></ion-icon>
           <a href="profile.html">
-            <h6>PROFILE</h6>
+            <h5>PROFILE</h5>
           </a>
         </div>
       </div>
@@ -111,12 +136,12 @@
           <input type="checkbox" class="checkbox">
           <span class="slider round"></span>
         </label>
-        <ion-icon name="close"></ion-icon>  
-      </div> 
-      
+        <ion-icon name="close"></ion-icon>
+      </div>
+
       <section class="withdrawal">
         <!-- ------------------------switch system for withdrawal and deposite page ------------------------- -->
-        
+
         <div class="with">
           <div class="winning_amount">
             <h4>Your Winning Amount</h4>
@@ -150,9 +175,9 @@
               <button>withdrawal</button>
             </div>
           </div>
-
         </div>
       </section>
+      
       <section class="deposite">
         <div class="innear_dep">
           <div>
@@ -296,6 +321,10 @@
       </div>
 
       <!-- --------------------------- creating the contact us page ------------------------------------------------------------------------------------------------------ -->
+
+
+
+
       <div class="contact_page">
         <div>
           <p>users can contact us through this number</p>
@@ -303,6 +332,93 @@
         </div>
       </div>
     </main>
+
+
+    <section class="pc">
+
+      <div class="area">
+
+      </div>
+
+      <div class="pc_header">
+
+      </div>
+
+      <nav class="main-menu">
+        <ul>
+          <li class="has-subnav">
+            <a href="home.html">
+              <ion-icon name="home-outline" role="img" class="md hydrated" aria-label="home outline"></ion-icon>
+              <span class="nav-text">
+                HOME
+              </span>
+            </a>
+
+          </li>
+          <li class="has-subnav">
+            <a href="his.html">
+              <ion-icon name="refresh-sharp" role="img" class="md hydrated" aria-label="refresh sharp"></ion-icon>
+              <span class="nav-text">
+                BET HISTORY
+              </span>
+            </a>
+
+          </li>
+          <li class="has-subnav">
+            <a href="result.html">
+              <ion-icon name="newspaper-outline" role="img" class="md hydrated"
+                aria-label="newspaper outline"></ion-icon>
+              <span class="nav-text">
+                RESULT
+              </span>
+            </a>
+
+          </li>
+          <li>
+            <a href="profile.html">
+              <ion-icon name="person-outline" role="img" class="md hydrated" aria-label="person outline"></ion-icon>
+              <span class="nav-text">
+                PROFILE
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cogs fa-2x"></i>
+              <span class="nav-text">
+                SETTING
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-usd"></ion-icon>
+              <span class="nav-text">
+                WITHDRAWAL / DEPOSITE
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="add-circle-outline"></ion-icon>
+              <span class="nav-text">
+                ADD MONEY
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="call"></ion-icon>
+              <span class="nav-text">
+                CONTACT US
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+
   </section>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

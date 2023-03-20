@@ -255,7 +255,7 @@ body {
 .withdrawals_in{
   height: max-content;
 }
-.withdrawals_in > ion-icon {
+.withdrawals_in > ion-icon , .Pc_deposite > ion-icon{
   position: absolute;
   top: 0;
   right: 0;
@@ -404,25 +404,25 @@ input:checked + .slider:before {
   transform: translate(130%);
 }
 
-.innear_dep {
+.innear_dep , .Pc_innear_dep {
   width: 95%;
   height: 60%;
 }
 
-.innear_dep > div {
+.innear_dep > div , .Pc_innear_dep > div{
   margin-top: 3rem;
 }
 
-.innear_dep > div > h5 {
+.innear_dep > div > h5 , .Pc_innear_dep > div > h5 {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
   margin-right: 1rem;
 }
-.dep_amount {
+.dep_amount , .Pc_dep_amount{
   height: 50%;
 }
-.dep_amount > input {
+.dep_amount > input , .Pc_dep_amount > input {
   width: 95%;
   margin-top: 1rem;
   outline: none;
@@ -433,7 +433,7 @@ input:checked + .slider:before {
   font-size: 1.5rem;
 }
 
-.innear_dep > span {
+.innear_dep > span ,.Pc_innear_dep > span {
   display: flex;
   justify-content: end;
   margin-right: .5rem;
@@ -720,3 +720,309 @@ input:checked + .slider:before {
     bottom: 1rem;
   }
 }
+
+
+/* ------------ footer for pc------------ */
+
+.fa-2x {
+  font-size: 2em;
+}
+
+li > a > ion-icon {
+  width: 60px;
+  height: 36px;
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 23px;
+}
+
+.main-menu,
+nav.main-menu {
+  width: 200px;
+  overflow: visible;
+}
+
+.main-menu {
+  background: #8359b9;
+  position: absolute;
+  top: 88px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  z-index: 5;
+
+}
+
+.main-menu > ul {
+  margin: 3.13rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.main-menu li {
+  position: relative;
+  border-bottom: 2px solid rgb(221, 216, 216);
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.main-menu li > a {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: start;
+  text-transform: uppercase;
+  /* -webkit-transform:translateZ(0) scale(1,1); */
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.main-menu .nav-icon {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main-menu > ul.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+  overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+  overflow-y: auto;
+  overflow: visible;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.area {
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Titillium WebLight"), local("TitilliumWeb-Light"),
+    url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff)
+      format("woff");
+}
+.main-menu li .nav-text {
+  padding: 0 0.25rem;
+}
+.main-menu li:hover .nav-text {
+  background-color: white;
+  color: black;
+  border-bottom-left-radius: 10px;
+}
+
+.main-menu li i {
+  background: #8d66be;
+}
+.main-menu::after {
+  content: "";
+  height: 6.3rem;
+  width: 6.3rem;
+  background-color: white;
+  position: absolute;
+  top: -3.6rem;
+  left: 1.1rem;
+  border-radius: 100%;
+}
+.pc_header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color:#8359b9;
+ }
+ .pc_withdrawal{
+  position: absolute;
+  right: 1%;
+  top: 74%;
+  display: flex;
+  flex-direction: column;
+ }
+ .pc_withdrawal > span{
+  margin: .7rem;
+  padding: .7rem;
+  border-radius: .7rem;
+  background:#8e7caa;
+  color: rgba(255, 255, 255, 0.876);
+ }
+
+ 
+/* -------------------------------- deposite page -------------------------------------------------------------------- */
+.Pc_deposite {
+  margin: 0 auto;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 65%;
+  transition: all 0.5s ease-out;
+  background-color: red;
+  transform: translateY(140vh);
+}
+
+
+
+/* -----------------pc media query ----------------0 */
+@media screen and (min-width: 490px){
+  #footer {
+    display: none;
+  }
+
+  .round {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    border-radius: 0;
+    height: 150px;   
+  }
+  .round > img {
+    display: none;
+  }
+  .profile_pic {
+    margin: 0 220px;
+    top: 100px;
+    background-color: white;
+  }
+  .user_details {
+   width: 40%;
+   margin-bottom: 2rem;
+  }
+
+  .profile_details {
+    top: 16%;
+    width: 55%;
+    height: 45%;
+    margin-left: 200px; 
+ }
+ 
+.withdrawals {
+  width: calc(100% - 50%);
+  margin-left: 250px;
+  top: 25%;
+  height: 65%;
+  transform: translateY(140vh);
+} 
+
+
+  .slider {
+   display: none;
+}
+}
+
+@media screen and (min-height:1060px){
+  .profile_details {
+    top: -1%;
+    left: 2%;
+ }   
+ .triangle_two {
+  top: 10%;
+  right: -69%;
+  height: 60%;
+  width: 120%;
+}
+
+}
+@media screen  and (height:1024px){
+  
+    .profile_details {
+      top: 1%;
+      left: 2%;
+   }   
+}
+@media screen and (width:500px){
+  
+  .user_details {
+    width: 90%;
+    margin-bottom: 3rem;
+   }
+ 
+   .profile_details {
+     height: 60%;
+  }  
+}
+@media screen and (width:768px) {
+  
+  .user_details {
+    width: 55%;
+   }
+   .triangle_third{
+    display: none;
+    border: 2px solid red;
+   }
+   .triangle_two {
+    top: 50%;
+  }
+ 
+}
+  
+
+/* -------------- phone media query ------------ */
+
+@media screen and (max-width: 490px) {
+  .main-menu {
+    display: none;
+  }
+  .pc_header{
+    display: none;
+  }
+}
+
